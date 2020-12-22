@@ -1,7 +1,9 @@
 import React,{ Component } from 'react';
-import Projects from './Projects'
-import SocialProfiles from './SocialProfiles'
-import profile from './assets/profile.png'
+import Projects from './Projects';
+import SocialProfiles from './SocialProfiles';
+import profile from '../assets/profile.png';
+import Title from './Title';
+
 // class RegularClass{}
 // class ComponentClass extends Component{
 //
@@ -45,7 +47,8 @@ class App extends Component{
             <div>
                 <img className="profile" src={profile} alt='profile'/>
                 <h1>Hello!</h1>
-                <p>My name is Eric. I am a sofware developer. </p>
+                <p>My name is Eric. </p>
+                <Title />
                 <p>Im always eager to learn new things! </p>
                 {
                     this.state.displayBio ? (
